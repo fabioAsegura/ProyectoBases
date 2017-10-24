@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>EliminarPrestamo</title>
+  <title>AñadirAuxiliar</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -53,13 +53,13 @@
       </button>
       <a class="navbar-brand" href="index.jsp">Laboratorio</a>
     </div>
-     <div class="collapse navbar-collapse" id="myNavbar">
+   <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li><a href="index.jsp">Inicio</a></li>
-        <li  class="active"><a href="Prestamos.jsp">Prestamos</a></li>
+        <li><a href="Prestamos.jsp">Prestamos</a></li>
         <li><a href="Activos.jsp">Activos</a></li>
         <li><a href="Solicitantes.jsp">Solicitante</a></li>
-        <li><a href="Auxiliar.jsp">Auxiliar</a></li>
+        <li class="active"><a href="Auxiliar.jsp">Auxiliar</a></li>
         <li><a href="Supervisor.jsp">Supervisor</a></li>
       </ul>
       
@@ -73,20 +73,33 @@
       
     </div>
     <div class="col-sm-8 text-left"> 
-      <h1>Eliminar prestamo</h1>
+      <h1>Añadir Auxiliar</h1>
       <p></p>
       <hr>
       <div class="container">   
   <form class="form-inline">
   <div class="form-group">
-    <label for="Idusuario">ID Activo:</label>
-    <input class="form-control" id="Idusuario">
-  </div>
-  <div class="form-group">
-    <label for="idequipo">ID solicitante:</label>
+    <label for="idequipo">ID Auxiliar:</label>
     <input  class="form-control" id="idequipo">
   </div>
- 
+  <div class="form-group">
+    <label for="nombre">Nombre:</label>
+    <input  class="form-control" id="nombre">
+  </div>
+      <div class="form-group">
+    <label for="calificacion">Apellido:</label>
+    <input  class="form-control" id="calificacion">
+  </div>
+      <div class="span12">&nbsp;</div>
+      <div class="form-group">
+    <label for="fechaC">Fecha Entrada:</label>
+    <input  class="form-control" id="fechaC">
+  </div>
+    <div class="form-group">
+    <label for="prestaso">Turno:</label>
+    <input  class="form-control" id="prestado">
+  </div>
+     
       <br>
       <div class="span12">&nbsp;</div>
   <button type="submit" class="btn btn-default">Enviar</button>

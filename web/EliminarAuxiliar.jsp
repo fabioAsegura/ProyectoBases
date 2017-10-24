@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>EliminarEquipo</title>
+  <title>EliminarAuxiliar</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -57,9 +57,10 @@
       <ul class="nav navbar-nav">
         <li><a href="index.jsp">Inicio</a></li>
         <li><a href="Prestamos.jsp">Prestamos</a></li>
-        <li><a href="Equipos.jsp">Equipos</a></li>
-        <li><a href="Usuarios.jsp">Usuarios</a></li>
-        <li><a href="Reportes.jsp">Reportes</a></li>
+        <li><a href="Activos.jsp">Activos</a></li>
+        <li><a href="Solicitantes.jsp">Solicitante</a></li>
+        <li class="active"><a href="Auxiliar.jsp">Auxiliar</a></li>
+        <li><a href="Supervisor.jsp">Supervisor</a></li>
       </ul>
       
     </div>
@@ -72,14 +73,14 @@
       
     </div>
     <div class="col-sm-8 text-left"> 
-      <h1>Eliminar Equipo</h1>
+      <h1>Eliminar Auxiliar</h1>
       <p></p>
       <hr>
       <div class="container">   
   <form class="form-inline">
   <div class="form-group">
-    <label for="idequipo">ID equipo:</label>
-    <input  class="form-control" id="idequipo">
+    <label for="idusuario">ID Auxiliar:</label>
+    <input  class="form-control" id="idusuario">
   </div>
  
       <br>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Mantenimiento</title>
+  <title>EliminarEquipo</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -53,13 +53,14 @@
       </button>
       <a class="navbar-brand" href="index.jsp">Laboratorio</a>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
+   <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li><a href="index.jsp">Inicio</a></li>
         <li><a href="Prestamos.jsp">Prestamos</a></li>
-        <li><a href="Equipos.jsp">Equipos</a></li>
-        <li><a href="Usuarios.jsp">Usuarios</a></li>
-        <li><a href="Reportes.jsp">Reportes</a></li>
+        <li class="active"><a href="Activos.jsp">Activos</a></li>
+        <li><a href="Solicitantes.jsp">Solicitante</a></li>
+        <li><a href="Auxiliar.jsp">Auxiliar</a></li>
+        <li><a href="Supervisor.jsp">Supervisor</a></li>
       </ul>
       
     </div>
@@ -72,22 +73,16 @@
       
     </div>
     <div class="col-sm-8 text-left"> 
-      <h1>Mantenimiento</h1>
+      <h1>Eliminar Activo</h1>
+      <p></p>
       <hr>
       <div class="container">   
   <form class="form-inline">
   <div class="form-group">
-    <label for="idequipo">ID equipo:</label>
+    <label for="idequipo">ID Activo:</label>
     <input  class="form-control" id="idequipo">
- 
- <div class="form-group">
-            <label >Mantenimiento:</label>
-            <select name="inf">
-                <option value="int">ENVIAR</option>
-                <option value="double">SACAR</option>
-            </select>
   </div>
-     </div>
+ 
       <br>
       <div class="span12">&nbsp;</div>
   <button type="submit" class="btn btn-default">Enviar</button>

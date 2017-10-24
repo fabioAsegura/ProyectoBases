@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>AñadirEquipo</title>
+  <title>BuscarActivo</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -57,9 +57,10 @@
       <ul class="nav navbar-nav">
         <li><a href="index.jsp">Inicio</a></li>
         <li><a href="Prestamos.jsp">Prestamos</a></li>
-        <li><a href="Equipos.jsp">Equipos</a></li>
-        <li><a href="Usuarios.jsp">Usuarios</a></li>
-        <li><a href="Reportes.jsp">Reportes</a></li>
+        <li><a href="Activos.jsp">Activos</a></li>
+        <li><a href="Solicitantes.jsp">Solicitante</a></li>
+        <li class="active"><a href="Auxiliar.jsp">Auxiliar</a></li>
+        <li><a href="Supervisor.jsp">Supervisor</a></li>
       </ul>
       
     </div>
@@ -72,42 +73,34 @@
       
     </div>
     <div class="col-sm-8 text-left"> 
-      <h1>Añadir Equipo</h1>
+      <h1>Buscar Auxiliar</h1>
       <p></p>
       <hr>
       <div class="container">   
   <form class="form-inline">
+  
   <div class="form-group">
-    <label for="idequipo">ID equipo:</label>
+    <label for="idequipo">ID Auxiliar:</label>
     <input  class="form-control" id="idequipo">
   </div>
-  <div class="form-group">
-    <label for="nombre">Nombre:</label>
-    <input  class="form-control" id="nombre">
-  </div>
-      <div class="form-group">
-    <label for="calificacion">Calificacion:</label>
-    <input  class="form-control" id="calificacion">
-  </div>
-      <div class="span12">&nbsp;</div>
-      <div class="form-group">
-    <label for="fechaC">Fecha compra:</label>
-    <input  class="form-control" id="fechaC">
-  </div>
-    <div class="form-group">
-    <label for="prestaso">veces prestado:</label>
-    <input  class="form-control" id="prestado">
-  </div>
-     <div class="form-group">
-    <label for="estado">Estado:</label>
-    <input  class="form-control" id="estado">
-  </div>
-      
+ 
       <br>
       <div class="span12">&nbsp;</div>
   <button type="submit" class="btn btn-default">Enviar</button>
 </form>
       </div>
+      <div class="span12">&nbsp;</div>
+                 <div class="container">           
+  <table class="table table-striped">
+      <tr>
+        <th>ID Auxiliar</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Fecha Entrado</th>
+        <th>Turno</th>
+      </tr>
+  </table>
+</div>
     </div>
    
   </div>

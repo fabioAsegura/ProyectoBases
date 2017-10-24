@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Usuarios</title>
+  <title>Auxiliar</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -57,9 +57,10 @@
       <ul class="nav navbar-nav">
         <li><a href="index.jsp">Inicio</a></li>
         <li><a href="Prestamos.jsp">Prestamos</a></li>
-        <li><a href="Equipos.jsp">Equipos</a></li>
-        <li class="active"><a href="Usuarios.jsp">Usuarios</a></li>
-        <li><a href="Reportes.jsp">Reportes</a></li>
+        <li><a href="Activos.jsp">Activos</a></li>
+        <li><a href="Solicitantes.jsp">Solicitante</a></li>
+        <li class="active"><a href="Auxiliar.jsp">Auxiliar</a></li>
+        <li><a href="Supervisor.jsp">Supervisor</a></li>
       </ul>
       
     </div>
@@ -71,23 +72,22 @@
     <div class="col-sm-2 sidenav">
     </div>
     <div class="col-sm-8 text-left"> 
-      <h1>Usuarios</h1>
+      <h1>Auxiliar</h1>
       <div class="span12">&nbsp;</div>
-      <button onclick="window.location.href='AñadirUsuario.jsp'" type="button" type="button" class="btn-sm btn-success">Añadir Usuario</button>
-      <button onclick="window.location.href='EliminarUsuario.jsp'" type="button" type="button" class="btn-sm btn-danger">Eliminar Usuario</button>
+      <button onclick="window.location.href='AñadirAuxiliar.jsp'" type="button" type="button" class="btn-sm btn-success">Añadir Auxiliar</button>
+      <button onclick="window.location.href='EliminarAuxiliar.jsp'" type="button" type="button" class="btn-sm btn-danger">Eliminar Auxiliar</button>
+            <button onclick="window.location.href='BuscarAuxiliar.jsp'" type="button" type="button" class="btn-sm btn-warning">Buscar Auxiliar</button>
       <div class="span12">&nbsp;</div>
       
 
         <div class="container">           
   <table class="table table-striped">
       <tr>
-        <th>UsuarioID</th>
+        <th>ID Auxiliar</th>
         <th>Nombre</th>
-        <th>Tipo</th>
-        <th>Calificacion</th>
-        <th>Deudas actuales</th>
-        <th>Deudas totales</th>
-
+        <th>Apellido</th>
+        <th>Fecha Entrado</th>
+        <th>Turno</th>
       </tr>
   </table>
 </div>

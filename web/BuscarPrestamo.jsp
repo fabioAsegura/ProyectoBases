@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>EliminarPrestamo</title>
+  <title>BuscarPrestamo</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -73,15 +73,12 @@
       
     </div>
     <div class="col-sm-8 text-left"> 
-      <h1>Eliminar prestamo</h1>
+      <h1>Buscar prestamo</h1>
       <p></p>
       <hr>
       <div class="container">   
   <form class="form-inline">
-  <div class="form-group">
-    <label for="Idusuario">ID Activo:</label>
-    <input class="form-control" id="Idusuario">
-  </div>
+  
   <div class="form-group">
     <label for="idequipo">ID solicitante:</label>
     <input  class="form-control" id="idequipo">
@@ -92,6 +89,19 @@
   <button type="submit" class="btn btn-default">Enviar</button>
 </form>
       </div>
+      <div class="span12">&nbsp;</div>
+          <div class="container">           
+  <table class="table table-striped">
+      <tr>
+        <th>ID Activo</th>
+        <th>ID solicitante</th>
+        <th>Tipo</th>
+        <th>fecha salida</th>
+        <th>fecha entrada</th>
+        <th>ID prestamo</th>
+      </tr>
+  </table>
+</div>
     </div>
    
   </div>

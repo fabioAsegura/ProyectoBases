@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Equipos</title>
+  <title>AñadirSolicitante</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -57,9 +57,10 @@
       <ul class="nav navbar-nav">
         <li><a href="index.jsp">Inicio</a></li>
         <li><a href="Prestamos.jsp">Prestamos</a></li>
-        <li class="active"><a href="Equipos.jsp">Equipos</a></li>
-        <li><a href="Usuarios.jsp">Usuarios</a></li>
-        <li><a href="Reportes.jsp">Reportes</a></li>
+        <li><a href="Activos.jsp">Activos</a></li>
+        <li class="active"><a href="Solicitantes.jsp">Solicitante</a></li>
+        <li><a href="Auxiliar.jsp">Auxiliar</a></li>
+        <li><a href="Supervisor.jsp">Supervisor</a></li>
       </ul>
       
     </div>
@@ -69,33 +70,55 @@
 <div class="container-fluid text-center">    
   <div class="row content">
     <div class="col-sm-2 sidenav">
+      
     </div>
     <div class="col-sm-8 text-left"> 
-      <h1>Equipos</h1>
-      <div class="span12">&nbsp;</div>
-      <button onclick="window.location.href='AñadirEquipo.jsp'" type="button" type="button" class="btn-sm btn-success">Añadir Equipo</button>
-      <button onclick="window.location.href='EliminarEquipo.jsp'" type="button" type="button" class="btn-sm btn-danger">Eliminar Equipo</button>
-      <div class="span12">&nbsp;</div>
-      
-
-        <div class="container">           
-  <table class="table table-striped">
-      <tr>
-        <th>EquipoID</th>
-        <th>Nombre</th>
-        <th>Fecha Compra</th>
-        <th>Veces prestado</th>
-        <th>Ultimo mant.</th>
-        <th>Estado</th>
-        <th>Calificacion</th>
-
-      </tr>
-  </table>
-</div>
+      <h1>Añadir Solicitante</h1>
+      <p></p>
       <hr>
-      
+      <div class="container">   
+  <form class="form-inline">
+  <div class="form-group">
+    <label for="Idusuario">ID Solicitante:</label>
+    <input class="form-control" id="Idusuario">
+  </div>
+  <div class="form-group">
+    <label for="nombre">Nombre:</label>
+    <input  class="form-control" id="nombre">
+  </div>
+  <div class="form-group">
+    <label for="tipo">Apellido:</label>
+    <input  class="form-control" id="tipo">
+  </div>
+      <div class="span12">&nbsp;</div>
+      <div class="form-group">
+    <label for="calificaion">Escuela:</label>
+    <input  class="form-control" id="calificacion">
+  </div>
+    <div class="form-group">
+    <label for="tipo">Calificación</label>
+    <select class="form-control" id="tipo">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+     <div class="form-group">
+    <label for="tipo">Tipo</label>
+    <select class="form-control" id="tipo">
+      <option>Profesor</option>
+      <option>Estudiante</option>
+    </select>
+  </div>
+      <br>
+      <div class="span12">&nbsp;</div>
+  <button type="submit" class="btn btn-default">Enviar</button>
+</form>
+      </div>
     </div>
- 
+   
   </div>
 </div>
 

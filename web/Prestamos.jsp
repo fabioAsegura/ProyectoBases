@@ -57,9 +57,10 @@
       <ul class="nav navbar-nav">
         <li><a href="index.jsp">Inicio</a></li>
         <li  class="active"><a href="Prestamos.jsp">Prestamos</a></li>
-        <li><a href="Equipos.jsp">Equipos</a></li>
-        <li><a href="Usuarios.jsp">Usuarios</a></li>
-        <li><a href="Reportes.jsp">Reportes</a></li>
+        <li><a href="Activos.jsp">Activos</a></li>
+        <li><a href="Solicitantes.jsp">Solicitante</a></li>
+        <li><a href="Auxiliar.jsp">Auxiliar</a></li>
+        <li><a href="Supervisor.jsp">Supervisor</a></li>
       </ul>
       
     </div>
@@ -75,18 +76,19 @@
       <div class="span12">&nbsp;</div>
       <button onclick="window.location.href='NuevoPrestamo.jsp'" type="button" class="btn-sm btn-success">Añadir Prestamo</button>
       <button onclick="window.location.href='Devoluciones.jsp'" type="button" class="btn-sm btn-danger">Eliminar Prestamo</button>
+      <button onclick="window.location.href='BuscarPrestamo.jsp'" type="button" class="btn-sm btn-warning">buscar Prestamo</button>
       <div class="span12">&nbsp;</div>
       
 
         <div class="container">           
   <table class="table table-striped">
       <tr>
-        <th>Equipo prestado</th>
-        <th>Usuario</th>
-        <th>Fecha prestamo</th>
-        <th>Fecha devolucion</th>
+        <th>ID Activo</th>
+        <th>ID solicitante</th>
         <th>Tipo</th>
-        <th>Estado</th>
+        <th>fecha salida</th>
+        <th>fecha entrada</th>
+        <th>ID prestamo</th>
       </tr>
   </table>
 </div>

@@ -53,13 +53,14 @@
       </button>
       <a class="navbar-brand" href="index.jsp">Laboratorio</a>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
+     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li><a href="index.jsp">Inicio</a></li>
-        <li><a href="Prestamos.jsp">Prestamos</a></li>
-        <li><a href="Equipos.jsp">Equipos</a></li>
-        <li><a href="Usuarios.jsp">Usuarios</a></li>
-        <li><a href="Reportes.jsp">Reportes</a></li>
+        <li  class="active"><a href="Prestamos.jsp">Prestamos</a></li>
+        <li><a href="Activos.jsp">Activos</a></li>
+        <li><a href="Solicitantes.jsp">Solicitante</a></li>
+        <li><a href="Auxiliar.jsp">Auxiliar</a></li>
+        <li><a href="Supervisor.jsp">Supervisor</a></li>
       </ul>
       
     </div>
@@ -78,28 +79,30 @@
       <div class="container">   
   <form class="form-inline">
   <div class="form-group">
-    <label for="Idusuario">ID usuario:</label>
-    <input class="form-control" id="Idusuario">
+    <label for="Idactivo">ID Activo:</label>
+    <input class="form-control" id="Idactivo">
   </div>
   <div class="form-group">
-    <label for="idequipo">ID equipo:</label>
-    <input  class="form-control" id="idequipo">
+    <label for="solicitante">ID solicitante:</label>
+    <input  class="form-control" id="solicitante">
   </div>
   <div class="form-group">
-    <label for="fechaP">Fecha y hora de prestamo:</label>
-    <input  class="form-control" id="fechaP">
+    <label for="fechae">Fecha entrada:</label>
+    <input  class="form-control" id="fechae">
   </div>
       <div class="span12">&nbsp;</div>
       <div class="form-group">
-    <label for="fechaE">Fecha y hora de entrega:</label>
-    <input  class="form-control" id="fechaE">
-  </div>
-    <div class="form-group">
-    <label for="tipo">Tipo:</label>
-    <input  class="form-control" id="tipo">
+    <label for="fechas">Fecha salida:</label>
+    <input  class="form-control" id="fechas">
+   <div class="form-group">
+    <label for="tipo">Tipo</label>
+    <select class="form-control" id="tipo">
+      <option>Interno</option>
+      <option>Externo</option>
+    </select>
   </div>
      <div class="form-group">
-    <label for="estado">Estado:</label>
+    <label for="estado">ID prestamo:</label>
     <input  class="form-control" id="estado">
   </div>
       <br>

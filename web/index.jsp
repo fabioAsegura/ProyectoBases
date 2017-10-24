@@ -57,9 +57,10 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.jsp">Inicio</a></li>
         <li><a href="Prestamos.jsp">Prestamos</a></li>
-        <li><a href="Equipos.jsp">Equipos</a></li>
-        <li><a href="Usuarios.jsp">Usuarios</a></li>
-        <li><a href="Reportes.jsp">Reportes</a></li>
+        <li><a href="Activos.jsp">Activos</a></li>
+        <li><a href="Solicitantes.jsp">Solicitantes</a></li>
+        <li><a href="Auxiliar.jsp">Auxiliar</a></li>
+        <li><a href="Supervisor.jsp">Supervisor</a></li>
       </ul>
       
     </div>
@@ -77,9 +78,8 @@
       <hr>
       
   <div class="btn-group">
-    <button onclick="window.location.href='NuevoPrestamo.jsp'" type="button" class="btn-lg btn-default"> Nuevo Prestamo</button>
+    <button onclick="window.location.href='Prestamos.jsp'" type="button" class="btn-lg btn-default"> Nuevo Prestamo</button>
     <button onclick="window.location.href='Devoluciones.jsp'" type="button" class="btn-lg btn-default">Devoluciones</button>
-    <button onclick="window.location.href='Mantenimiento.jsp'" type="button" class="btn-lg btn-default">Mantenimiento</button>
   </div>
 
     </div>

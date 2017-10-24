@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>EliminarPrestamo</title>
+  <title>EliminarSupervisor</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -53,14 +53,14 @@
       </button>
       <a class="navbar-brand" href="index.jsp">Laboratorio</a>
     </div>
-     <div class="collapse navbar-collapse" id="myNavbar">
+    <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li><a href="index.jsp">Inicio</a></li>
-        <li  class="active"><a href="Prestamos.jsp">Prestamos</a></li>
+        <li><a href="Prestamos.jsp">Prestamos</a></li>
         <li><a href="Activos.jsp">Activos</a></li>
         <li><a href="Solicitantes.jsp">Solicitante</a></li>
         <li><a href="Auxiliar.jsp">Auxiliar</a></li>
-        <li><a href="Supervisor.jsp">Supervisor</a></li>
+        <li class="active"><a href="Supervisor.jsp">Supervisor</a></li>
       </ul>
       
     </div>
@@ -73,18 +73,14 @@
       
     </div>
     <div class="col-sm-8 text-left"> 
-      <h1>Eliminar prestamo</h1>
+      <h1>Eliminar Supervisor</h1>
       <p></p>
       <hr>
       <div class="container">   
   <form class="form-inline">
   <div class="form-group">
-    <label for="Idusuario">ID Activo:</label>
-    <input class="form-control" id="Idusuario">
-  </div>
-  <div class="form-group">
-    <label for="idequipo">ID solicitante:</label>
-    <input  class="form-control" id="idequipo">
+    <label for="idusuario">ID Supervisor:</label>
+    <input  class="form-control" id="idusuario">
   </div>
  
       <br>

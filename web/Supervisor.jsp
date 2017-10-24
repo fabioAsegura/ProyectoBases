@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>AñadirUsuario</title>
+  <title>Supervisor</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -57,9 +57,10 @@
       <ul class="nav navbar-nav">
         <li><a href="index.jsp">Inicio</a></li>
         <li><a href="Prestamos.jsp">Prestamos</a></li>
-        <li><a href="Equipos.jsp">Equipos</a></li>
-        <li><a href="Usuarios.jsp">Usuarios</a></li>
-        <li><a href="Reportes.jsp">Reportes</a></li>
+        <li><a href="Activos.jsp">Activos</a></li>
+        <li><a href="Solicitantes.jsp">Solicitante</a></li>
+        <li><a href="Auxiliar.jsp">Auxiliar</a></li>
+        <li class="active"><a href="Supervisor.jsp">Supervisor</a></li>
       </ul>
       
     </div>
@@ -69,46 +70,32 @@
 <div class="container-fluid text-center">    
   <div class="row content">
     <div class="col-sm-2 sidenav">
-      
     </div>
     <div class="col-sm-8 text-left"> 
-      <h1>Añadir Usuario</h1>
-      <p></p>
+      <h1>Supervisores</h1>
+      <div class="span12">&nbsp;</div>
+      <button onclick="window.location.href='AñadirSupervisor.jsp'" type="button" type="button" class="btn-sm btn-success">Añadir Supervisor</button>
+      <button onclick="window.location.href='EliminarSupervisor.jsp'" type="button" type="button" class="btn-sm btn-danger">Eliminar Supervisor</button>
+            <button onclick="window.location.href='BuscarSupervisor.jsp'" type="button" type="button" class="btn-sm btn-warning">Buscar Supervisor</button>
+      <div class="span12">&nbsp;</div>
+      
+
+        <div class="container">           
+  <table class="table table-striped">
+      <tr>
+        <th>ID Supervisor</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>fecha entrada</th>
+       
+
+      </tr>
+  </table>
+</div>
       <hr>
-      <div class="container">   
-  <form class="form-inline">
-  <div class="form-group">
-    <label for="Idusuario">ID usuario:</label>
-    <input class="form-control" id="Idusuario">
-  </div>
-  <div class="form-group">
-    <label for="nombre">Nombre:</label>
-    <input  class="form-control" id="nombre">
-  </div>
-  <div class="form-group">
-    <label for="tipo">Tipo:</label>
-    <input  class="form-control" id="tipo">
-  </div>
-      <div class="span12">&nbsp;</div>
-      <div class="form-group">
-    <label for="calificaion">Calificacion:</label>
-    <input  class="form-control" id="calificacion">
-  </div>
-    <div class="form-group">
-    <label for="deudasA">Deudas actuales:</label>
-    <input  class="form-control" id="deudasA">
-  </div>
-     <div class="form-group">
-    <label for="deudasT">Deudas totales:</label>
-    <input  class="form-control" id="duedasT">
-  </div>
-      <br>
-      <div class="span12">&nbsp;</div>
-  <button type="submit" class="btn btn-default">Enviar</button>
-</form>
-      </div>
+      
     </div>
-   
+ 
   </div>
 </div>
 
